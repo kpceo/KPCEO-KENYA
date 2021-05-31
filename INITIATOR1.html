@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+   
+    <!-- linking font awesome for icons -->
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>
+        /* Whole html box designing */
+        html {
+            box-sizing: border-box;
+        }
+          
+        /* Body width fixing */
+        body {
+            max-width: 100%
+        }
+          
+        /* Box sizing depending on parent */
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+          
+        /* Styling column */
+        .column {
+            float: left;
+            width: 33%;
+            margin-bottom: 16px;
+            padding: 5px 10px;
+        }
+          
+  
+        /* Column width change depends on screen size */
+        @media screen and (max-width: 670px) {
+            .column {
+                width: 100%;
+                text-align: none;
+            }
+        }
+          
+        /* Card designing */
+        .card {
+            background-color: gray;
+            border: 1px solid black;
+        }
+          
+        .container {
+            padding: 0 16px;
+        }
+          
+        /* Icon styling */
+        .fa {
+            margin: 10px;
+            font-size:68px;
+  
+        }
+          
+        .fa:hover {
+            transform: rotateY(180deg);
+            transition: transform 0.8s;
+        }
+          
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+          
+        /* Button designing */
+        .button {
+            border: none;
+            padding: 8px;
+            color: white;
+            background-color: #449D44;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+          
+        /* Hover efect on button */
+        .button:hover {
+            background-color: green;
+        }
+      
+        /* Margining first member of team */
+        #gfg {
+            float:none;
+            margin:auto;
+        }
+          /* Site Navigation */
+.site-nav {
+	margin-top: 20px;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+}
+
+.site-nav a {
+	display: block;
+	color: #617140;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 3px solid #e5e9dc;
+	border-bottom: none;
+}
+
+.site-nav a:hover {
+	background-color: #e5e9dc;
+}
+
+/* End Site Navigation */
+    </style>
+</head>
+   
+<body>
+    <header>
+        <h1>KENYA PASTORS AND CHRISTIANS EMPOWERMENT ORGANIZATION</h1>
+    <nav class="site-nav">
+        <ul class="group">
+            <li><a href="kpceomain1.html">HOME</a></li>
+            <li><a href="ABOUTUSKPCEO.html">ABOUT US</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+        
+        </ul>
+    </nav> 
+    </header>
+    <center>
+        <h2>Meet kpceo initiators</h2>
+        <hr>
+   
+        <!-- First member of the team -->
+        <div class="row">
+            <div class="column" id="gfg">
+                <div class="card">
+                    <img src="IMAGES/website/chair.JPG" alt="John" style="width:80%">
+                    
+                    <div class="container">
+                        <h2>Pst. Wilson M Wamusosi</h2>
+                        <p>Chair person and co-founder of KPCEO</p>
+                        <p>
+                           WELCOME
+                        </p>
+                        <button class="button">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <!-- Other members of the team -->
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/website/vc.JPG" alt="John" style="width:80%">
+                    <div class="container">
+                        <h2>Mr. Joseph W Mapesa</h2>
+                        <p>Vice Chair person and co-founder of KPCEO</p>
+                        <p>
+                            WELCOME
+                        </p>
+                        <button class="button">EMAIL</button>
+                    </div>
+                </div>
+            </div>
+   
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/website/mr. tressure.jpg" alt="John" style="width:80%">
+                    <div class="container">
+                        <h2>pst. Festus M katava</h2>
+                        <p>tresure and co-founder of KPCEO</p>
+                        <p>
+                            WELCOME
+                        </p>
+                        <button class="button">EMAIL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="IMAGES/website/sec1.jpg" alt="John" style="width:80%">
+                    <div class="container">
+                        <h2>Mrs. Lydia W Kamande</h2>
+                        <p>Secretary person and co-founder of KPCEO</p>
+                        <p>
+                            WELCOME
+                        </p>
+                        <button class="button">EMAIL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+<footer>
+    <p>&copy; 2021 - KPCEO</p>
+    <div id="copyright" class="clr">
+        Copyright KPCEO, Design &amp; Developed by <a href="robertetemesi@gmail.com" target="_blank">REN</a> 2021. All Rights Reserved</div><!-- #copyright -->	</div><!-- #footer-bottom-inner -->
+        </div><!-- #footer-bottom -->
+</footer>
+</html>
