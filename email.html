@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script type="text/javascript">
+    function sendEmail() {
+        Email.send({
+            SecureToken: "security token of your smtp",
+            To: "someone@gmail.com",
+            From: "someone@gmail.com",
+            Subject: "Subject...",
+            Body: document.getElementById('text').value
+        }).then( 
+            message => alert("mail sent successfully")
+        );
+    }
+</script>
+</head>
+<body>
+    <textarea id="myText">
+        
+    </textarea>
+    <button onclick="sendMail(); return false">Send</button>
+    <script>
+        function sendMail() {
+    var link = "mailto:robertetemesi@gmail.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + encodeURIComponent("This is my subject")
+             + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+    ;
+    
+    window.location.href = link;
+}
+    </script>
+</body>
+</html>
